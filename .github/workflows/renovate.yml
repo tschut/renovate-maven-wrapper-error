@@ -1,0 +1,22 @@
+name: Renovate
+on:
+  workflow_dispatch: # allows manual one-off run
+
+permissions:
+  contents: write
+  pull-requests: write
+  
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run Renovate
+        uses: renovatebot/github-action@v43.0.12
+        with:
+          token: ${{ secrets.RENOVATE_TOKEN }}
+        env:
+          RENOVATE_REPOSITORIES: tschut/renovate-maven-wrapper-error
+          LOG_LEVEL: debug
+
