@@ -11,4 +11,5 @@ jobs:
         uses: renovatebot/github-action@v43.0.12
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repositories: tschut/renovate-maven-wrapper-error
+        env:
+          RENOVATE_REPOSITORIES: tschut/renovate-maven-wrapper-error
