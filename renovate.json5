@@ -1,8 +1,6 @@
 {
-  // I'm a comment, yay
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  packageRules: [
-
-  ],
-  configMigration: true // look ma, no trailing comma
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ]
 }
