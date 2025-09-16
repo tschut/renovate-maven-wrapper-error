@@ -1,6 +1,11 @@
 name: Renovate
 on:
   workflow_dispatch: # allows manual one-off run
+
+permissions:
+  contents: write   # 👈 allow pushing branches
+  pull-requests: write   # 👈 allow creating PRs
+  
 jobs:
   renovate:
     runs-on: ubuntu-latest
