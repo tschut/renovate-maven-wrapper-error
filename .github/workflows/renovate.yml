@@ -18,4 +18,4 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
         env:
           RENOVATE_REPOSITORIES: tschut/renovate-maven-wrapper-error
-          LOG_LEVEL: debug
+          LOG_LEVEL: info
