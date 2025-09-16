@@ -3,8 +3,8 @@ on:
   workflow_dispatch: # allows manual one-off run
 
 permissions:
-  contents: write   # 👈 allow pushing branches
-  pull-requests: write   # 👈 allow creating PRs
+  contents: write
+  pull-requests: write
   
 jobs:
   renovate:
